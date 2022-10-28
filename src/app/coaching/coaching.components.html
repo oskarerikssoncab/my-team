@@ -1,0 +1,15 @@
+<app-coaching-navbar></app-coaching-navbar>
+<app-coaching-sidebar
+  class="fixed top-[64px] left-0 w-[260px]"
+></app-coaching-sidebar>
+
+<div class="flex">
+  <div
+    class="ml-[260px] mt-[64px] w-full overflow-y-auto min-h-[calc(100vh-64px)]"
+  >
+    <app-coach-hero></app-coach-hero>
+    <main class="p-8">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>

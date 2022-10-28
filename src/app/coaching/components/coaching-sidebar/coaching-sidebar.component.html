@@ -1,0 +1,36 @@
+<mat-sidenav-container class="w-[260px] h-[calc(100vh-64px)] mat-elevation-z4">
+  <mat-sidenav [opened]="false" [fixedInViewport]="true"
+    >Mobile menu will be here</mat-sidenav
+  >
+  <mat-sidenav-content>
+    <mat-selection-list [multiple]="false" style="padding-top: 0px">
+      <mat-list-option
+        routerLink="/coaching"
+        [value]="'/coaching'"
+        [selected]="true"
+      >
+        <div class="flex items-center">
+          <mat-icon fontIcon="home"></mat-icon>
+          <a class="mt-1 ml-4">Hem</a>
+        </div>
+      </mat-list-option>
+
+      <mat-list-option
+        routerLink="/coaching/tools/foods"
+        [value]="'/coaching/tools/foods'"
+      >
+        <div class="flex items-center">
+          <mat-icon fontIcon="local_dining"></mat-icon>
+          <a class="mt-1 ml-4">Livsmedel</a>
+        </div>
+      </mat-list-option>
+
+      <mat-list-option>
+        <div class="flex items-center">
+          <mat-icon fontIcon="settings"></mat-icon>
+          <a [routerLink]="'/coaching'" class="mt-1 ml-4">Inställningar</a>
+        </div></mat-list-option
+      >
+    </mat-selection-list>
+  </mat-sidenav-content>
+</mat-sidenav-container>
